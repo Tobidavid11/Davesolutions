@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Tobi David Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tobi David Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tobi David Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/fmy3-1.jpg"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Tobi David Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button" class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#blog">See Blog</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            Hi, I'm Tobi David<br />
+            Frontend Web Developer
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            A frontend software engineer and Graphics designer who builds 
+            rich designs accessible and performant websites.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Trusted by</h2>
+          <div class="logos">
+            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/pj-logo - Copy.png"
+                alt="Jofwitsolutions"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/logo-1.jpg"
+                alt="Devcent"
+                class="logo"
+              />
+
+         
+              <img
+                loading="lazy"
+                src="assets/amazon-logo.png"
+                alt="Shopify"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/netflix-logo-1.png"
+                alt="Agency elevation"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/facebook logo.png"
+                alt="Ron jones"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/logo-1.jpg"
+                alt="Mighty furniture's"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/logo.png"
+                alt="Bulls eye"
+                class="logo hide to-top"
+              />
+         
+              <img
+                loading="lazy"
+                src="assets/JOBIT-NEW-LOGO.png"
+                alt="Fastlane"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Webkit Movies</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+Webkit Movies is an upcoming international entertainment platform design for users to watch their favourite movie series and program and also download them to their mobile devices for free.
+                </p>
+                <p class="work-text">
+Hire me and let's work and also solve problems together.
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>React</li>
+                  <li>Html</li>
+                  <li>Tailwind</li>
+                  <li>JavaScript</li>
+                  <li>Css</li>   
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link">Explore this project</a
+                  >
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/devTobi Davidmohsin"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/logos/Joseph _ My Portfolio-1_files/figma-184a11e6.png"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/webki-pj.png"
+                  alt="Explore"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">My Portfolio</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">Website for Agency Elevation.</p>
+                <ol class="work-technologies">
+                  <li>React</li>
+                  <li>Gatsby</li>
+                  <li>Material UI</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="http://github.com/devTobi Davidmohsin"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/logos/logo-1.png"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/tobidavid-pj.png"
+                  alt="portfolio template"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Devcent Community</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  An innovative online learning platform
+                  designed to equip learners with in-demand
+                  tech skills.
+                </p>
+                <ol class="work-technologies">
+                  <li>NextJS</li>
+                  <li>React</li>
+                  <li>TailwindCSS</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://www.devcent.net" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/logos/logo-2.png"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/logos/Joseph _ My Portfolio-2_files/devcent-8625a84f.png"
+                  alt="contribute dev"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- I write blog posts on dev.to at https://github.com//Tobidavid11. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="blog">My Articles</h2>
+          <div class="article-boxes">
+            <article class="article-box featured-article">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h3">
+                    10 Useful Tricks React Developer Should Know
+                  </h3>
+                  <p class="article-text">
+                    Note: All the tips shared in this article are part
+                    of my Linkedin posts consisting the tips and tricks we should know as developers to make our work easier and faster.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://www.linkedin.com/posts/tobiloba-david-381b23302_10-tricks-react-developers-should-know-understand-activity-7182457361901469697-W055?utm_source=share&utm_medium=member_andriod" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img src="assets/heart.png" alt="heart" />
+                    400
+                  </span>
+                </div>
+              </div>
+              <picture class="article-illustration">
+                <img
+                  src="assets/react-img.webp"
+                  alt="MacBook Pro"
+                  loading="lazy"
+                />
+              </picture>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Default props in react functional component.</h3>
+                  <p class="article-text">
+                    In React,the function syntax is appropriate for components that simply render elements without keeping track of their state or lifecycle. 
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://linkedin.com/posts/tobiloba-david-381b23302_default-props-in-react-functional-components-activity-7182458944756342784-b_3S?utm-source=share&utm_medium=member_andriod" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="assets/heart.png"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    147
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">
+     5 Useful JavaScript you should know ✨
+                  </h3>
+                  <p class="article-text">
+                  JavaScript is everywhere. Whether it's more than 70% of websites on internet or in the realms of applications. E.g Machine learning ,Mobile development...
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://www.linkedin.com/posts/tobiloba-david-381b23302_javascript-is-everywhere-whether-its-more-activity-7182462475844370432-785q?utm_source=share&utm_medium=member_andriod" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="assets/heart.png"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    177
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">5 Html tricks you should try out</h3>
+                  <div class="article-text">
+               HTML is used to create web pages.In every new release of HTML, developers make some changes and add amazing features. There are unknown features by most developers who can help developers improve web pages.
+
+
+                  </div>
+                </div>
+                <div class="article-info">
+                  <a href="https://www.linkedin.com/posts/tobiloba-david-381b23302_top-5-html-tricks-you-should-know-html-is-activity-7182459914986872832-maDN?utm_source=share&utm_medium=member_andriod" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      loading="lazy"
+                      src="assets/heart.png"
+                      alt="heart"
+                    />
+                    350
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Skills</h2>
+          <div class="skills-imgs">
+                <img src="assets/logos/logo-1.png" alt="React" class="skills-img" loading="lazy" title="React">
+                <img src="assets/logos/logo-10.png" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
+                 <img src="assets/logos/logo-18.png" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
+                 <img src="assets/logos/logo-9.png" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
+                 <img src="assets/logos/logo-19.png" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+                 <img src="assets/logos/logo-20.png" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+                 <img src="assets/logos/logo-14.png" alt="Graph Ql" class="skills-img" loading="lazy" title="Graph QL">
+                 <img src="assets/logos/logo-12.png" alt="Git" class="skills-img" loading="lazy" title="Git">
+                 <img src="assets/logos/logo-2.png" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                 <img src="assets/logos/logo-17.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <h2 class="h2">Testimonials</h2>
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+          Tobiloba David is a student I trained myself. I myself can't fathom his level of intelligence. "A great teacher producing an excellent student."that is the case. He loves cooperation and listen to corrections.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/oluwafemi.jpg"
+                  alt="OluwaFemi Faleye"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">OluwaFemi Faleye</h3>
+                  <p class="testimonial-author-job">Developer @Oyo</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Tobi David is a fantastic Graphics designer and developer with a keen sense for logo Design, and lead generation. He's a designer I know who also has a deep understanding for code and front-end development.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/adejare danuiel.jpg"
+                  alt="Adejare Daniel"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                  Adejare Daniel
+                  </h3>
+                  <p class="testimonial-author-job">Web Developer |Student @FUNNAB
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+             
+                Talented Designer, experienced with various
+                media and can make any project you are working on look good. He is
+                easy to work with and is a self starter. I would work with Tobi David
+                again.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/Ogunyomi Isrral.png"
+                  alt="Brian Hirsh"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Ogunyomi Isreal</h3>
+                  <p class="testimonial-author-job">Data analyist@Osun</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Tobi David is a professional with amazing talent. He is a creative
+                thinker, has his finger on the pulse of whats to come, and
+                absolutely one of the quickest and best problem solvers I have
+                ever met.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/Toriola malik.jpg"
+                  alt="Toriola Malik"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Toriola Malik</h3>
+                  <p class="testimonial-author-job">Student|Computer Scientist@Akure</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+               Tobi David is one of my favourite people to work with. He's my go-to colleague when i have problems with bugs, terminal issues and massive project. 
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/Shittu abdulazeez.png"
+                  alt="Val Head"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Shittu Abdulazeez</h3>
+                  <p class="testimonial-author-job">UI/UX Designer |Back-end Developer@Lagos</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+              Tobiloba David is a fantastic developer and a professional graphics designer and i know that with consistency, he will accomplish alot of things. Keep it up!
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/tomisin isaac.jpg"
+                  alt="Gary Simon"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Tomisin Isaac</h3>
+                  <p class="testimonial-author-job">Product Designer@Ekiti</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+               As a front-end Developer, i love to create a user-friendly website for users better experience and also believe in the power of cooperation with other developers like me.I don't know it all but i look forward to be better everyday. I tend to code things from scratch and enjoy
+                bringing ideas to life.
+              </p>
+              <p class="contact-text">
+                I'm also a Graphics Designer, and in my leisure period, I do
+                logo designs with my smartphone.
+              </p>
+              <img
+                src="assets/sign-1.jpg"
+                alt="Tobi David"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/Tobidavid11" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/github.png"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="facebook" href="https://www.facebook.com/profile.php?id=61551508845502" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/facebook logo.png"
+                    alt="Codepen"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/tobiloba-david-381b23302" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/linkedin.png"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Twitter" href="https://x.com/Tobidavis1234" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/twitter.png"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/Tobidavid11">Tobi David.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
